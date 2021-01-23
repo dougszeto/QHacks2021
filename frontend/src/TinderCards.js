@@ -13,6 +13,7 @@ function TinderCards() {
             url: 'https://jooinn.com/images/dog-67.jpg',
         }
     ]);
+
     return (
         <div>
             <h1>Tinder cards</h1>

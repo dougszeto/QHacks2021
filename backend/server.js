@@ -6,7 +6,7 @@ const serviceAccount = require('./qhacks2021-b167e-firebase-adminsdk-32qfo-803e5
 
 //initialize admin SDK using serciceAcountKey
 admin.initializeApp({
-credential: admin.credential.cert(serviceAccount)
+    credential: admin.credential.cert(serviceAccount)
 });
 
 const db = admin.firestore();
@@ -33,17 +33,7 @@ app.get('/', async (req, res) => {
 
 
 // TEST GET API
-app.get('/:breed', async (req, res) => {
-    const breed = req.params.breed;
-    const query = db.collection('Dogs').where('breed', '==', breed);
-    const querySnapshot = await query.get();
-    if(querySnapshot.size > 0) {
-        res.json(querySnapshot.docs[0].data());
-    } 
-    else {
-        res.status(400).json('Not found!');
-    }
-})
+
 
 // TEST POST API
 app.post('/', async (req, res) => {

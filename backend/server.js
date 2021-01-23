@@ -1,5 +1,6 @@
 const express = require('express');
 const Firestore = require('@google-cloud/firestore');
+require('dotenv').config();
 
 const db = new Firestore();
 const app = express();

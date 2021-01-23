@@ -1,7 +1,5 @@
 const express = require('express');
 require('dotenv').config();
-const admin = require('firebase-admin');
-const serviceAccount = require('./qhacks2021-b167e-firebase-adminsdk-32qfo-803e52a72a.json');
 
 const admin = require('firebase-admin');
 const serviceAccount = require('./qhacks2021-b167e-firebase-adminsdk-32qfo-803e52a72a.json');

@@ -1,5 +1,6 @@
 const express = require('express');
 const Firestore = require('@google-cloud/firestore');
+require('dotenv').config();
 
 const admin = require('firebase-admin');
 const serviceAccount = require('./qhacks2021-b167e-firebase-adminsdk-32qfo-803e52a72a.json');

@@ -1,5 +1,4 @@
 const express = require('express');
-const Firestore = require('@google-cloud/firestore');
 require('dotenv').config();
 
 const admin = require('firebase-admin');
@@ -16,6 +15,8 @@ const db = admin.firestore();
 
 const app = express();
 
+const db = admin.firestore();
+const app = express();
 app.use(express.json());
 
 const port = process.env.PORT || 8080;
@@ -31,4 +32,3 @@ app.get('/', async (req, res) => {
         res.json(querySnapshot.docs[0].data());
     }
 })
-

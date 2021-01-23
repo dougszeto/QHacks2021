@@ -15,3 +15,4 @@ app.listen(port, () => {
 app.get('/', async (req, res) => {
     res.json('Goodboy API ready to roll!');
 })
+

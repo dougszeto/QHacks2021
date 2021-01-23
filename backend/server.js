@@ -1,7 +1,17 @@
 const express = require('express');
 const Firestore = require('@google-cloud/firestore');
 
-const db = new Firestore();
+const admin = require('firebase-admin');
+const serviceAccount = require('./qhacks2021-b167e-firebase-adminsdk-32qfo-803e52a72a.json');
+
+//initialize admin SDK using serciceAcountKey
+admin.initializeApp({
+credential: admin.credential.cert(serviceAccount)
+});
+
+// not sure about this, I'm trying to access the database
+const db = admin.firestore();
+
 const app = express();
 
 app.use(express.json());

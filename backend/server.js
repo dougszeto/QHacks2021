@@ -64,16 +64,3 @@ app.post('/', async (req, res) => {
         .then(() => {res.json(`${dog.name} added successfully!`)})
         .catch(err => res.status(400).json(err));
 })
-
-
-// SHELTER ENDPOINTS
-app.get('/shelters', async (req, res) => {
-    const query = db.collection('Dogs');
-    const querySnapshot = await query.get();
-    if(querySnapshot.size > 0) {
-        res.json(querySnapshot.docs[0].data());
-    } 
-    else {
-        res.status(400).json('Not found!');
-    }
-})

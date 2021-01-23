@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 require('dotenv').config();
 
 const admin = require('firebase-admin');
@@ -12,6 +13,7 @@ admin.initializeApp({
 const db = admin.firestore();
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 const port = process.env.PORT || 8080;
 

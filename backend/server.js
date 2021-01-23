@@ -9,12 +9,6 @@ admin.initializeApp({
 credential: admin.credential.cert(serviceAccount)
 });
 
-// not sure about this, I'm trying to access the database
-const db = admin.firestore();
-
-
-const app = express();
-
 const db = admin.firestore();
 const app = express();
 app.use(express.json());
@@ -30,5 +24,13 @@ app.get('/', async (req, res) => {
     const querySnapshot = await query.get();
     if (querySnapshot.size > 0) {
         res.json(querySnapshot.docs[0].data());
+    }
+})
+
+app.get('/shelters', async (req, res) => {
+    const query = db.collection('Shelters')
+    const querySnapshot = await query.get();
+    if (querySnapshot.size > 0) {
+        res.json(querySnapshot);
     }
 })

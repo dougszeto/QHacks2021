@@ -13,6 +13,7 @@ credential: admin.credential.cert(serviceAccount)
 // not sure about this, I'm trying to access the database
 const db = admin.firestore();
 
+
 const app = express();
 
 app.use(express.json());
@@ -24,6 +25,10 @@ app.listen(port, () => {
 })
 
 app.get('/', async (req, res) => {
-    res.json('Goodboy API ready to roll!');
+    const query = db.collection('Dogs')
+    const querySnapshot = await query.get();
+    if (querySnapshot.size > 0) {
+        res.json(querySnapshot.docs[0].data());
+    }
 })
 

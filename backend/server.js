@@ -18,6 +18,14 @@ app.use(express.json());
 
 const port = process.env.PORT || 8080;
 
+const dogsRouter = require('./routes/dogs');
+const sheltersRouter = require('./routes/shelters');
+const usersRouter = require('./routes/users');
+
+app.use('/dogs', dogsRouter);           // dog endpoints have /dogs/endpoint
+app.use('/shelters', sheltersRouter);   // shelter endpoints have /shelters/endpoint
+app.use('/users', usersRouter);         // user endpoints have /users/endpoint
+
 app.listen(port, () => {
     console.log(`Goodboy API is running on port ${port}`);
 })

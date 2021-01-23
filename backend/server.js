@@ -39,3 +39,23 @@ app.get('/:breed', async (req, res) => {
         res.status(400).json('Not found!');
     }
 })
+
+// TEST POST API
+app.post('/', async (req, res) => {
+    const dog = {
+        activity_level: req.body.activity_level,
+        age: req.body.age,
+        breed: req.body.breed,
+        color: req.body.color,
+        good_with_kids: req.body.good_with_kids,
+        image: req.body.image,
+        name: req.body.name,
+        needs_fence: req.body.needs_fence,
+        sex: req.body.sex,
+        shelter: req.body.shelter
+    };
+    
+    await db.collection('Dogs').doc().set(dog)
+        .then(() => {res.json(`${dog.name} added successfully!`)})
+        .catch(err => res.status(400).json(err));
+})

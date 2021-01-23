@@ -12,6 +12,7 @@ credential: admin.credential.cert(serviceAccount)
 // not sure about this, I'm trying to access the database
 const db = admin.firestore();
 
+
 const app = express();
 app.use(express.json());
 

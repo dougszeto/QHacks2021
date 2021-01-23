@@ -1,1 +1,5 @@
-node_modules
+backend/qhacks2021-b167e-firebase-adminsdk-32qfo-803e52a72a.json
+backend/node_modules/
+# Mac/OSX
+.DS_Store
+ backend/node_modules

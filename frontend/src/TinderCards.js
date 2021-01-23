@@ -4,16 +4,7 @@ import './TinderCards.css';
 import axios from 'axios';
 
 function TinderCards() {
-    const [people, setPeople] = useState([
-        // {
-        //     name: 'woofy',
-        //     url: 'https://www.vets4pets.com/siteassets/species/dog/large-dog-on-walk-looking-over-hills.jpg?w=585&scale=down',
-        // },
-        // {
-        //     name: 'fluffy',
-        //     url: 'https://jooinn.com/images/dog-67.jpg',
-        // }
-    ]);
+    const [people, setPeople] = useState([]);
 
     return (
         <div>

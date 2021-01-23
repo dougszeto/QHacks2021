@@ -6,6 +6,14 @@ import axios from 'axios';
 function TinderCards() {
     const [people, setPeople] = useState([]);
 
+    //runs once when the component loads
+    useEffect( () => {
+        axios.get('http://localhost:5000/dogs/')
+            .then(res => {
+                setPeople(res.data);
+            })
+            .catch(err => console.log(`Error receiving from backend: ${err}`));
+    }, []);
     return (
         <div>
             <h1>Tinder cards</h1>

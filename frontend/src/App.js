@@ -14,8 +14,9 @@ function App() {
           <h1>I am chat page</h1>
         </Route>
         <Route path='/'>
-          <TinderCards />
           {/*Make sure homepage (default) stays at the bottom of routing list*/}
+          <TinderCards />
+          <SwipeButtons />
         </Route>
       </Switch>
       {/* Tinder Cards */}

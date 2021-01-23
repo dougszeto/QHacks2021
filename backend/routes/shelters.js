@@ -12,7 +12,6 @@ router.route('/').get(async (req, res) => {
   const querySnapshot = await query.get();
   if(querySnapshot.size > 0) {
     shelters = querySnapshot.docs.map(doc => doc.data());
-    shelters.dogs.map(dog => dog._path);
     res.json(shelters);
   } 
   else {

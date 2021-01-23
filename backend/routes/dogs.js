@@ -14,7 +14,7 @@ router.route('/').get(async (req, res) => {
 });
 
 // GET ALL DOGS OF GIVEN BREED
-router.route('/:breed').get(async (req, res) => {
+router.route('/breeds/:breed').get(async (req, res) => {
     const breed = req.params.breed;
     const query = db.collection('Dogs').where('breed', '==', breed);
     const querySnapshot = await query.get();
@@ -26,7 +26,7 @@ router.route('/:breed').get(async (req, res) => {
         res.json(data);
     } 
     else {
-        res.status(400).json('Not found!');
+        res.status(400).json(`Could not find any ${breed}s`);
     }
 });
 
@@ -43,7 +43,7 @@ router.route('/max-age/:age').get(async (req, res) => {
         res.json(data);
     } 
     else {
-        res.status(400).json('Not found!');
+        res.status(400).json(`Could not find any dogs younger than ${age}`);
     }
 });
 
@@ -60,10 +60,11 @@ router.route('/min-age/:age').get(async (req, res) => {
         res.json(data);
     } 
     else {
-        res.status(400).json('Not found!');
+        res.status(400).json(`Could not find any dogs older than ${age}`);
     }
 });
 
+// GET ALL DOGS THAT ARE GOOD WITH KIDS
 router.route('/kids').get(async (req, res) => {
     const query = db.collection('Dogs').where('good_with_kids', '==', true);
     const querySnapshot = await query.get();
@@ -75,7 +76,7 @@ router.route('/kids').get(async (req, res) => {
         res.json(data);
     } 
     else {
-        res.status(400).json('Not found!');
+        res.status(400).json(`Could not find any dogs that are good with kids`);
     }
 });
 

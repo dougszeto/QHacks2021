@@ -37,9 +37,18 @@ function ChatScreen() {
                     <p className='chatScreen__textUser'>{message.message}</p>
                 </div>
                 )
-            ))}
+            ))}   
         </div>
     );
 }
+
+<div> <form className='chatScreen__input'>
+    <input   
+        placeholder='Type a message...'
+        type='text'
+        className='chatScreen__inputField'/>
+        <button className='chatScreen__inputButton'>SEND</button>
+                </form>
+                </div>
 
 export default ChatScreen;

@@ -22,6 +22,7 @@ function App() {
           <Chats/>
         </Route>
         <Route path='/preferences'>
+          <Header backButton='/'/>
           <Preferences />
         </Route>
         <Route path='/'>

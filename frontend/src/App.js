@@ -4,27 +4,29 @@ import Header from './Header';
 import TinderCards from './TinderCards';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import SwipeButtons from './SwipeButton';
+import Chats from './Chats';
+import ChatScreen from './ChatScreen';
 
 function App() {
   return (
     <div className="App">
-     <Header />
      <Router>
       <Switch>
-        <Route path='/chat'>
-          <h1>I am chat page</h1>
+      <Route path='/chats/:person'>
+          <Header backButton='/chats'/>
+          <ChatScreen/>
+        </Route>
+        <Route path='/chats'>
+          <Header backButton='/'/>
+          <Chats/>
         </Route>
         <Route path='/'>
           {/*Make sure homepage (default) stays at the bottom of routing list*/}
+          <Header />
           <TinderCards />
           <SwipeButtons />
         </Route>
       </Switch>
-      {/* Tinder Cards */}
-      {/* Buttons below tinder cards*/}
-        
-      {/* Chats screen */}
-      {/* Individual chat screen */}
       </Router>
 
          

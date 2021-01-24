@@ -138,3 +138,4 @@
 [0123/161315.096:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffb84c15978 of 48 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
 [0123/161315.096:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffb84c1b4c0 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
 [0123/161317.158:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[0123/195758.850:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)

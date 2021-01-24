@@ -2,6 +2,7 @@ import React from 'react';
 import './Header.css';
 import PersonIcon from '@material-ui/icons/Person';
 import ForumIcon from '@material-ui/icons/Forum';
+import Logo from "./logo.png";
 
 function Header() {
   return (
@@ -10,7 +11,7 @@ function Header() {
       <PersonIcon className='header__icon'/>
       <img 
         className='header__logo'
-        src='http://www.vectorico.com/download/social_media/Tinder-Icon.jpg'/>
+        src={Logo}/>
       < ForumIcon className='header__icon'/>
   </div>
   );

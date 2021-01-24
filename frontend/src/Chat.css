@@ -4,7 +4,7 @@
     justify-content: space-between;
     padding: 20px;
     height: 70p;
-    border-bottom: 1px solid darkblue;
+    border-bottom: 0.25px solid #434056;
 }
 
 a {
@@ -17,11 +17,13 @@ a {
 }
 
 .chat__details > h2 {
-    color: white;
+    font-weight: normal;
+    color: #e5e5e5;
 }
 
 .chat__details > p {
-    color: gray;
+    color: #e5e5e5;
+    font-weight: lighter;
 }
 
 .chat__image {
@@ -29,5 +31,6 @@ a {
 }
 
 .chat__timestamp {
-    color: lightgrey;
+    color: #E5e5e5;
+    font-weight: lighter;
 }

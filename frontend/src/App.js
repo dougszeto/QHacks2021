@@ -21,7 +21,7 @@ function App() {
         <Route path='/'>
           {/*Make sure homepage (default) stays at the bottom of routing list*/}
           <TinderCards />
-          <SwipeButtons />
+          {/* <SwipeButtons /> */}
         </Route>
       </Switch>
       {/* Tinder Cards */}

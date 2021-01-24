@@ -1,6 +1,5 @@
 const router = require('express').Router();
 const admin = require('firebase-admin');
-const { get } = require('./shelters');
 const db = admin.firestore();
 
 class User {
@@ -60,20 +59,16 @@ router.route('/:user/matches').get(async (req, res) => {
   }
 });
 
+
 // does not work
 router.route('/:user/matches').put(async (req, res) => {
   const newMatch = req.body.match;
   const id = req.params.user;
-  const query = db.collection('Users').withConverter(userConverter);
-  const querySnapshotGet = await query.get();
-  if(querySnapshotGet.size > 0) {
-    // get matches
-    const matches = querySnapshotGet.docs.map(doc => doc.id == id? doc.data().matches: {})[0]
-    matches.push(newMatch)
 
-    // update
-    const querySnapshotSet = await query.doc(id).set({matches: matches});
-    res.json('yo');
+  const query = db.collection('Users').where('id', '==', ''+id).withConverter(userConverter);
+  const querySnapshot = await query.get();
+  if(querySnapshot.size > 0) {
+    res.json(querySnapshot.data());
   } 
   else {
     res.status(400).json('Not found!');

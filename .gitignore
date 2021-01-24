@@ -1,5 +1,7 @@
 backend/qhacks2021-b167e-firebase-adminsdk-32qfo-803e52a72a.json
 backend/node_modules/
+frontend/.eslintcache
 # Mac/OSX
 .DS_Store
  backend/node_modules
+node_modules

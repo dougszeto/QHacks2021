@@ -25,7 +25,7 @@ function App() {
           <Header backButton='/'/>
           <Preferences />
         </Route>
-        <Route path='/' exact>
+        <Route path='/'>
           {/*Make sure homepage (default) stays at the bottom of routing list*/}
           <Header />
           <TinderCards />

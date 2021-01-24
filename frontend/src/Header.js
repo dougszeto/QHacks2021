@@ -16,18 +16,18 @@ function Header({backButton}) {
         <ArrowBackIosIcon fontSize='large' className='header__icon'/>
       </IconButton>
     ) : (
-      <Link to='/preferences'>
+      <Link to='/QHacks2021/preferences'>
         <IconButton>
           <PersonIcon fontSize='large' className='header__icon'/>
         </IconButton>
       </Link>
     )}
-    <Link to='/'>
+    <Link to='/QHacks2021/'>
       <img 
         className='header__logo'
         src={Logo}/>
     </Link>
-    <Link to='/chats'>
+    <Link to='/QHacks2021/chats'>
       <IconButton>
         <ForumIcon fontSize='large' className='header__icon'/>
       </IconButton>

@@ -13,18 +13,19 @@ function App() {
     <div className="App">
      <Router>
       <Switch>
-      <Route path='/chats/:person'>
-          <Header backButton='/chats'/>
-          <ChatScreen/>
+        <Route path='/chats/:person'>
+            <Header backButton='/chats'/>
+            <ChatScreen/>
         </Route>
         <Route path='/chats'>
           <Header backButton='/'/>
           <Chats/>
         </Route>
         <Route path='/preferences'>
+          <Header backButton='/'/>
           <Preferences />
         </Route>
-        <Route path='/'>
+        <Route path='/' exact>
           {/*Make sure homepage (default) stays at the bottom of routing list*/}
           <Header />
           <TinderCards />

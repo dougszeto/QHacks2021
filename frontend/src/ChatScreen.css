@@ -5,10 +5,11 @@
 }
 
 .chatScreen__text {
+    color: #e5e5e5;
     margin-left: 10px;
-    background-color:orange;
+    background-color:#434056;
     padding: 15px;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
 .chatScreen__timestamp {
@@ -18,10 +19,11 @@
 }
 
 .chatScreen__textUser {
+    color: #e5e5e5;
     margin-left: auto;
-    background-color: rgb(117, 241, 225);
+    background-color: #66B7AF;
     padding: 15px;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
 .chatScreen__input {
@@ -30,9 +32,13 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    border-top: 1px solid lightgray;
+    border-top: 0.25px solid #434056;
 }
-
+.chatScreen__input input{
+    background-color: #222030;
+    color: #e5e5e5;
+    outline: none;
+}
 .chatScreen__inputField{
     flex: 1;
     padding: 10px;
@@ -41,8 +47,13 @@
 
 .chatScreen__inputButton {
     border: none;
-    margin-right: 20px;
-    background-color: white;
-    font-weight: bolder;
-    color: red;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 1%;
+    background-color: #434056;
+    font-weight: normal;
+    color: #66B7AF;
+    border-radius: 6px;
 }

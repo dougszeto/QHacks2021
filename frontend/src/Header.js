@@ -14,7 +14,7 @@ function Header() {
       <img 
         className='header__logo'
         src={Logo}/>
-      < ForumIcon className='header__icon'/>
+      
       <IconButton>
         <ForumIcon fontSize='large' className='header__icon'/>
       </IconButton>

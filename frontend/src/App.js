@@ -6,6 +6,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import SwipeButtons from './SwipeButton';
 import Chats from './Chats';
 import ChatScreen from './ChatScreen';
+import Preferences from './Preferences';
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
         <Route path='/chats'>
           <Header backButton='/'/>
           <Chats/>
+        </Route>
+        <Route path='/preferences'>
+          <Preferences />
         </Route>
         <Route path='/'>
           {/*Make sure homepage (default) stays at the bottom of routing list*/}

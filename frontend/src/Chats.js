@@ -3,7 +3,7 @@ import './Chats.css';
 import Chat from './Chat';
 
 function Chats() {
-    return <div className='chats'>
+    return (<div className='chats'>
         <Chat
             name='Sandy'
             message='Hi my name is Sandy and Im looking for the perfect family'
@@ -34,7 +34,7 @@ function Chats() {
             timestamp='1 week ago'
             profilePic='...'
         />
-    </div>;
+    </div>);
 }
 
 export default Chats;

@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/QHacks2021/static/css/main.32d172d4.chunk.css",
-    "main.js": "/QHacks2021/static/js/main.b91d5365.chunk.js",
-    "main.js.map": "/QHacks2021/static/js/main.b91d5365.chunk.js.map",
+    "main.js": "/QHacks2021/static/js/main.bac366a7.chunk.js",
+    "main.js.map": "/QHacks2021/static/js/main.bac366a7.chunk.js.map",
     "runtime-main.js": "/QHacks2021/static/js/runtime-main.58acaf0c.js",
     "runtime-main.js.map": "/QHacks2021/static/js/runtime-main.58acaf0c.js.map",
     "static/js/2.441fcd65.chunk.js": "/QHacks2021/static/js/2.441fcd65.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.58acaf0c.js",
     "static/js/2.441fcd65.chunk.js",
     "static/css/main.32d172d4.chunk.css",
-    "static/js/main.b91d5365.chunk.js"
+    "static/js/main.bac366a7.chunk.js"
   ]
 }

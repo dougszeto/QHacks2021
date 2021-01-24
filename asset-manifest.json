@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/QHacks2021/static/css/main.7533defa.chunk.css",
+    "main.js": "/QHacks2021/static/js/main.20f1ea40.chunk.js",
+    "main.js.map": "/QHacks2021/static/js/main.20f1ea40.chunk.js.map",
+    "runtime-main.js": "/QHacks2021/static/js/runtime-main.58acaf0c.js",
+    "runtime-main.js.map": "/QHacks2021/static/js/runtime-main.58acaf0c.js.map",
+    "static/js/2.3685b975.chunk.js": "/QHacks2021/static/js/2.3685b975.chunk.js",
+    "static/js/2.3685b975.chunk.js.map": "/QHacks2021/static/js/2.3685b975.chunk.js.map",
+    "static/js/3.7ae4a611.chunk.js": "/QHacks2021/static/js/3.7ae4a611.chunk.js",
+    "static/js/3.7ae4a611.chunk.js.map": "/QHacks2021/static/js/3.7ae4a611.chunk.js.map",
+    "index.html": "/QHacks2021/index.html",
+    "static/css/main.7533defa.chunk.css.map": "/QHacks2021/static/css/main.7533defa.chunk.css.map",
+    "static/js/2.3685b975.chunk.js.LICENSE.txt": "/QHacks2021/static/js/2.3685b975.chunk.js.LICENSE.txt",
+    "static/media/logo.f890efcc.png": "/QHacks2021/static/media/logo.f890efcc.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.58acaf0c.js",
+    "static/js/2.3685b975.chunk.js",
+    "static/css/main.7533defa.chunk.css",
+    "static/js/main.20f1ea40.chunk.js"
+  ]
+}

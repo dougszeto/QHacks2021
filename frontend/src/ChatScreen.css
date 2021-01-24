@@ -4,7 +4,22 @@
     padding: 20px;
 }
 
-.chatScreen__texts {
+.chatScreen__text {
     margin-left: 10px;
-    background-color: lightgray;
+    background-color:orange;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.chatScreen__timestamp {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.chatScreen__textUser {
+    margin-left: auto;
+    background-color: rgb(117, 241, 225);
+    padding: 15px;
+    border-radius: 20px;
 }

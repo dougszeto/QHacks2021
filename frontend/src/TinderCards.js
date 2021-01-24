@@ -8,7 +8,7 @@ function TinderCards() {
 
     //runs once when the component loads
     useEffect( () => {
-        axios.get('http://localhost:5000/dogs/')
+        axios.get('https://backend-w6cdgaoofq-ue.a.run.app/dogs/')
             .then(res => {
                 setPeople(res.data);
             })

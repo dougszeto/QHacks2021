@@ -1,6 +1,9 @@
 # Goodboy
 
-## Live Demo: https://dougszeto.github.io/QHacks2021/
+## Relevant Links 
+Live Demo: https://dougszeto.github.io/QHacks2021/
+
+Devpost: https://devpost.com/software/goodboy
 ## Inspiration
 
 The idea for this project came from a desire to reduce the inefficiency of dog adoption. Out of 30,000 dogs taken in by shelters each year, only 50% get adopted and 15% end up euthanized. By streamlining the pet/owner matching process, we hope to increase both the number of happy dogs and happy families.
